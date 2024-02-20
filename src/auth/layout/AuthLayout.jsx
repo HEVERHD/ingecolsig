@@ -1,5 +1,5 @@
 import { Grid, Typography } from '@mui/material';
-
+import logoIng from "../../assets/ingeLOGOsig.png"
 
 export const AuthLayout = ({ children, title = '' }) => {
   return (
@@ -12,6 +12,7 @@ export const AuthLayout = ({ children, title = '' }) => {
       justifyContent="center"
       sx={{ minHeight: '100vh', backgroundColor: 'primary.main', padding: 4 }}
     >
+      
 
       <Grid item
        className='box-shadow'
@@ -22,7 +23,9 @@ export const AuthLayout = ({ children, title = '' }) => {
             padding: 3, 
             borderRadius: 2 
         }}>
-          
+            <img src={logoIng} alt="Logotipo de Inge" style={{ width:'100%', marginBottom:"3%", display:"flex",
+            justifyContent:"center",
+          }}/>
           <Typography variant='h5' sx={{ mb: 1 }}>{ title }</Typography>
 
             
